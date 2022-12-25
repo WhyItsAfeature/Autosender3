@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hd_wallpaper_abstract_white_abstract_android_beautiful_best_design_good_iphone_white"
+    tools:context=".newapproach">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+
+            android:id="@+id/btn_contact"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="@android:drawable/presence_invisible"
+            android:backgroundTint="#6A0288D1"
+
+            android:gravity="center"
+            android:text="contact"
+            android:textSize="24sp" />
+
+
+        <Button
+            android:id="@+id/btn_date"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="@android:drawable/presence_invisible"
+            android:backgroundTint="#570097A7"
+            android:gravity="center"
+            android:text="date"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_selectet_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:gravity="center"
+        android:text=" "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/tv_selectet_contact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text=" "
+
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_selectet_date" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="#689CACA7"
+
+        android:text="write a message \nor choose a template"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/spContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_selectet_contact" />
+
+    <Spinner
+
+        android:id="@+id/spContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+
+        android:backgroundTint="#E8BFAF"
+        android:spinnerMode="dropdown"
+        android:text="templates"
+        app:layout_constraintBottom_toTopOf="@+id/multiLine_message"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/multiLine_message"
+        android:layout_width="352dp"
+        android:layout_height="300dp"
+        android:autoText="true"
+        android:background="@android:drawable/spinner_dropdown_background"
+        android:backgroundTint="?android:attr/textColorHintInverse"
+        android:elegantTextHeight="true"
+        android:ems="10"
+        android:freezesText="false"
+        android:gravity="start|top"
+        android:inputType="textLongMessage|textAutoCorrect|textMultiLine|text"
+        android:shadowColor="#0288D1"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_create"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spContainer" />
+
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="#B9239DDF"
+        android:text="create"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

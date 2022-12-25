@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hd_wallpaper_abstract_white_abstract_android_beautiful_best_design_good_iphone_white"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:orientation="vertical">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20mm"
+                    android:orientation="vertical">
+
+
+                    <RadioButton
+                        android:id="@+id/radio_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="152dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:duplicateParentState="false"
+                        android:text="@string/birthday"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/radio_Termins"
+                        android:layout_width="match_parent"
+                        android:layout_height="152dp"
+                        android:layout_weight="1"
+                        android:text="appointments"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </TableLayout>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_newapproach"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/editbox_background"
+
+                    android:backgroundTint="?android:attr/textColorHintInverse"
+                    android:text="approach\n birthday"
+                    android:textColor="#00796B" />
+
+
+                <Button
+                    android:id="@+id/btn_Button"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/editbox_background"
+                    android:backgroundTint="?android:attr/textColorHintInverse"
+                    android:text="approach\n appointment"
+                    android:textColor="#00796B" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lv_saves"
+                android:layout_width="396dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="?android:attr/textColorHintInverse" />
+        </TableRow>
+
+
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>
